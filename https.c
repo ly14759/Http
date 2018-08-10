@@ -325,7 +325,7 @@ int HandlerCGI(int new_sock, const HttpRequest* req)
 	//	c)程序替换-》先找到执行哪个CGI程序，替换(代码+数据);
 	//		替换成功。动态页面交给CGI程序执行
 	//	d)替换失败-》进程终止，不然子进程会继续做父进程的工作
-	//5.收尾工作-关闭管道
+	//5.收尾工作-关闭管道.
 	printf("GO in CGI\n");
 	int err_code = 200;
 	int fd1[2], fd2[2];
